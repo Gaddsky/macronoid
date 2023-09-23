@@ -182,6 +182,7 @@ impl Racquet {
 async fn main() {
     let mut racquet = Racquet::new();
     let mut ball = Ball::new();
+    ball.stick_to(&racquet);
     let mut blocks: Vec<Block> = Vec::new();
     for x in 0..20 {
         for y in 0..5 {
